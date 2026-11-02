@@ -1,0 +1,3044 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Size Guide & Fit Advisor for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-size-guide-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T02:28:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-size-guide-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-size-guide-for-woocommerce.php
+msgid "DEV3 AI Size Guide & Fit Advisor for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-size-guide-for-woocommerce.php
+msgid "https://dev3.tech/item/dev3-ai-size-guide-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-size-guide-for-woocommerce.php
+msgid "Size charts, a What size am I? fit quiz and AI chart drafting for WooCommerce, with return-reason learning."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-size-guide-for-woocommerce.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-size-guide-for-woocommerce.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:40
+msgid "DEV3 AI Size Guide"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:70
+#: build/admin.js:1
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:32
+#: includes/Settings.php:31
+#: build/admin.js:1
+msgid "Size guide"
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:44
+msgid "Size chart for this product"
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:46
+msgid "Automatic (by category, tag or product rules)"
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:47
+msgid "No size guide"
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:49
+msgid "draft"
+msgstr ""
+
+#. translators: %s: chart name.
+#: includes/Admin/Product_Meta.php:57
+#, php-format
+msgid "Currently: %s"
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:58
+msgid "Currently: no chart matches this product."
+msgstr ""
+
+#: includes/Admin/Product_Meta.php:60
+msgid "Manage size charts"
+msgstr ""
+
+#: includes/Ai/Drafts.php:38
+msgid "Choose a product first."
+msgstr ""
+
+#: includes/Ai/Drafts.php:94
+msgid "Paste the size chart text first."
+msgstr ""
+
+#: includes/Ai/Drafts.php:121
+#: includes/Ai/Drafts.php:135
+#: includes/Ai/Drafts.php:142
+msgid "Choose a JPG, PNG or WebP image."
+msgstr ""
+
+#: includes/Ai/Drafts.php:124
+#: includes/Ai/Drafts.php:138
+#: build/admin.js:1
+msgid "The image is larger than 4 MB."
+msgstr ""
+
+#: includes/Ai/Drafts.php:235
+msgid "DEV3 AI did not return a usable size chart. Try again or add more detail."
+msgstr ""
+
+#: includes/Ai/Drafts.php:235
+msgid "For pasted text or photos, make sure the size table is fully visible."
+msgstr ""
+
+#: includes/Ai/Drafts.php:238
+#: includes/Rest/Admin_Controller.php:166
+#: build/admin.js:1
+msgid "New size chart"
+msgstr ""
+
+#: includes/Ai/Drafts.php:260
+msgid "Add at least one measurement column first."
+msgstr ""
+
+#: includes/Ai/Drafts.php:301
+#: includes/Charts/Charts.php:147
+#: includes/Charts/Charts.php:204
+#: includes/Learning/Insights.php:278
+#: includes/Rest/Admin_Controller.php:182
+#: includes/Rest/Admin_Controller.php:249
+#: includes/Rest/Admin_Controller.php:457
+#: includes/Rest/Admin_Controller.php:650
+msgid "Size chart not found."
+msgstr ""
+
+#: includes/Ai/Drafts.php:310
+msgid "There are no return records for this chart yet."
+msgstr ""
+
+#: includes/Ai/Drafts.php:382
+#: build/admin.js:1
+msgid "Create a size chart first."
+msgstr ""
+
+#: includes/Ai/Drafts.php:392
+msgid "There are no product categories with products yet."
+msgstr ""
+
+#: includes/Ai/Drafts.php:503
+msgid "No classification returned."
+msgstr ""
+
+#: includes/Charts/Charts.php:33
+#: build/admin.js:1
+msgid "Size charts"
+msgstr ""
+
+#: includes/Charts/Charts.php:34
+#: includes/Frontend/Renderer.php:159
+#: includes/Frontend/Renderer.php:213
+#: build/admin.js:1
+#: build/blocks.js:1
+msgid "Size chart"
+msgstr ""
+
+#: includes/Charts/Charts.php:62
+#: includes/Charts/Parser.php:88
+#: includes/Charts/Templates.php:63
+msgid "Body measurements"
+msgstr ""
+
+#: includes/Charts/Charts.php:67
+#: includes/Charts/Templates.php:62
+#: build/admin.js:1
+msgid "Size"
+msgstr ""
+
+#: includes/Charts/Charts.php:74
+#: includes/Charts/Measures.php:24
+msgid "Chest"
+msgstr ""
+
+#: includes/Charts/Charts.php:143
+msgid "Give the size chart a name."
+msgstr ""
+
+#. translators: %s: chart name.
+#: includes/Charts/Charts.php:207
+#, php-format
+msgid "%s (copy)"
+msgstr ""
+
+#: includes/Charts/Measures.php:24
+msgid "Measure around the fullest part of your chest, under the arms, keeping the tape level."
+msgstr ""
+
+#: includes/Charts/Measures.php:25
+msgid "Bust"
+msgstr ""
+
+#: includes/Charts/Measures.php:25
+msgid "Measure around the fullest part of your bust, keeping the tape level across your back."
+msgstr ""
+
+#: includes/Charts/Measures.php:26
+msgid "Under-bust"
+msgstr ""
+
+#: includes/Charts/Measures.php:26
+msgid "Measure snugly around your ribcage, directly under the bust."
+msgstr ""
+
+#: includes/Charts/Measures.php:27
+msgid "Waist"
+msgstr ""
+
+#: includes/Charts/Measures.php:27
+msgid "Measure around your natural waistline, the narrowest part of your torso."
+msgstr ""
+
+#: includes/Charts/Measures.php:28
+msgid "Hips"
+msgstr ""
+
+#: includes/Charts/Measures.php:28
+msgid "Stand with feet together and measure around the fullest part of your hips."
+msgstr ""
+
+#: includes/Charts/Measures.php:29
+msgid "Inseam"
+msgstr ""
+
+#: includes/Charts/Measures.php:29
+msgid "Measure from the top of your inner thigh down to your ankle."
+msgstr ""
+
+#: includes/Charts/Measures.php:30
+msgid "Height"
+msgstr ""
+
+#: includes/Charts/Measures.php:30
+msgid "Stand straight against a wall without shoes."
+msgstr ""
+
+#: includes/Charts/Measures.php:31
+msgid "Weight"
+msgstr ""
+
+#: includes/Charts/Measures.php:32
+msgid "Foot length"
+msgstr ""
+
+#: includes/Charts/Measures.php:32
+msgid "Stand on paper, mark your heel and longest toe, and measure the distance."
+msgstr ""
+
+#: includes/Charts/Measures.php:33
+msgid "Foot width"
+msgstr ""
+
+#: includes/Charts/Measures.php:33
+msgid "Measure across the widest part of your foot."
+msgstr ""
+
+#: includes/Charts/Measures.php:34
+msgid "Neck"
+msgstr ""
+
+#: includes/Charts/Measures.php:34
+msgid "Measure around the base of your neck, leaving one finger of room."
+msgstr ""
+
+#: includes/Charts/Measures.php:35
+msgid "Sleeve"
+msgstr ""
+
+#: includes/Charts/Measures.php:35
+msgid "From the centre back of your neck, over the shoulder, to the wrist."
+msgstr ""
+
+#: includes/Charts/Measures.php:36
+msgid "Shoulder"
+msgstr ""
+
+#: includes/Charts/Measures.php:36
+msgid "Across your back from one shoulder point to the other."
+msgstr ""
+
+#: includes/Charts/Measures.php:37
+msgid "Thigh"
+msgstr ""
+
+#: includes/Charts/Measures.php:37
+msgid "Around the fullest part of your thigh."
+msgstr ""
+
+#: includes/Charts/Measures.php:38
+msgid "Head"
+msgstr ""
+
+#: includes/Charts/Measures.php:38
+msgid "Around your head, about 1 cm above the ears and eyebrows."
+msgstr ""
+
+#: includes/Charts/Measures.php:39
+msgid "Hand"
+msgstr ""
+
+#: includes/Charts/Measures.php:39
+msgid "Around your knuckles, excluding the thumb."
+msgstr ""
+
+#: includes/Charts/Measures.php:40
+msgid "Finger circumference"
+msgstr ""
+
+#: includes/Charts/Measures.php:40
+msgid "Wrap a strip of paper around the base of your finger and measure where it overlaps."
+msgstr ""
+
+#: includes/Charts/Measures.php:41
+msgid "Length"
+msgstr ""
+
+#: includes/Charts/Measures.php:42
+msgid "Width"
+msgstr ""
+
+#: includes/Charts/Measures.php:43
+msgid "Custom"
+msgstr ""
+
+#: includes/Charts/Parser.php:28
+msgid "Paste a header row and at least one size row."
+msgstr ""
+
+#: includes/Charts/Parser.php:45
+msgid "Could not find columns. Separate them with tabs, semicolons, commas or two spaces."
+msgstr ""
+
+#: includes/Charts/Parser.php:79
+msgid "No unit in the header: the values look like inches and were converted to cm."
+msgstr ""
+
+#: includes/Charts/Parser.php:80
+msgid "No unit in the header: the values were read as centimetres."
+msgstr ""
+
+#: includes/Charts/Templates.php:64
+#: build/admin.js:1
+msgid "International sizes"
+msgstr ""
+
+#: includes/Charts/Templates.php:76
+msgid "Women's tops"
+msgstr ""
+
+#: includes/Charts/Templates.php:77
+msgid "Blouses, shirts, knitwear and jackets (XS–XXL)."
+msgstr ""
+
+#: includes/Charts/Templates.php:107
+msgid "Women's dresses"
+msgstr ""
+
+#: includes/Charts/Templates.php:108
+msgid "Dresses and jumpsuits in US numeric sizes."
+msgstr ""
+
+#: includes/Charts/Templates.php:128
+msgid "Women's bottoms"
+msgstr ""
+
+#: includes/Charts/Templates.php:129
+msgid "Trousers, jeans, skirts and shorts."
+msgstr ""
+
+#: includes/Charts/Templates.php:147
+msgid "Men's tops & shirts"
+msgstr ""
+
+#: includes/Charts/Templates.php:148
+msgid "Shirts, T-shirts, hoodies and jackets (S–3XL)."
+msgstr ""
+
+#: includes/Charts/Templates.php:166
+msgid "Men's bottoms & jeans"
+msgstr ""
+
+#: includes/Charts/Templates.php:167
+msgid "Waist sizes 28–40 with inseam."
+msgstr ""
+
+#: includes/Charts/Templates.php:186
+msgid "Unisex T-shirts"
+msgstr ""
+
+#: includes/Charts/Templates.php:187
+msgid "Body chest plus flat garment measurements."
+msgstr ""
+
+#: includes/Charts/Templates.php:203
+msgid "Garment measurements"
+msgstr ""
+
+#: includes/Charts/Templates.php:204
+msgid "Chest width (flat)"
+msgstr ""
+
+#: includes/Charts/Templates.php:218
+msgid "Women's shoes"
+msgstr ""
+
+#: includes/Charts/Templates.php:219
+msgid "EU 36–42 with US, UK and foot length."
+msgstr ""
+
+#: includes/Charts/Templates.php:223
+#: includes/Charts/Templates.php:243
+msgid "Shoe sizes"
+msgstr ""
+
+#: includes/Charts/Templates.php:238
+msgid "Men's shoes"
+msgstr ""
+
+#: includes/Charts/Templates.php:239
+msgid "EU 40–46 with US, UK and foot length."
+msgstr ""
+
+#: includes/Charts/Templates.php:258
+msgid "Kids' clothing"
+msgstr ""
+
+#: includes/Charts/Templates.php:259
+msgid "Ages 2–12 by height, chest and waist."
+msgstr ""
+
+#: includes/Charts/Templates.php:279
+msgid "Bras"
+msgstr ""
+
+#: includes/Charts/Templates.php:280
+msgid "Band and cup from under-bust and bust."
+msgstr ""
+
+#: includes/Charts/Templates.php:284
+msgid "Bra sizes"
+msgstr ""
+
+#: includes/Charts/Templates.php:303
+msgid "Rings"
+msgstr ""
+
+#: includes/Charts/Templates.php:304
+msgid "US ring sizes 5–11 by finger circumference."
+msgstr ""
+
+#: includes/Charts/Templates.php:308
+msgid "Ring sizes"
+msgstr ""
+
+#: includes/Charts/Templates.php:323
+msgid "Hats & caps"
+msgstr ""
+
+#: includes/Charts/Templates.php:324
+msgid "Head circumference S–XL."
+msgstr ""
+
+#: includes/Charts/Templates.php:329
+msgid "Fitted"
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+#: build/admin.js:1
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Fit/Engine.php:131
+#: includes/Fit/Engine.php:179
+msgid "Enter at least one measurement from the size chart."
+msgstr ""
+
+#: includes/Fit/Engine.php:205
+msgid "This size chart has no sizes yet."
+msgstr ""
+
+#. translators: %s: size label.
+#: includes/Fit/Explainer.php:31
+#, php-format
+msgid "Size %s is your best match."
+msgstr ""
+
+#. translators: 1: measure, 2: value, 3: difference, 4: size.
+#: includes/Fit/Explainer.php:40
+#, php-format
+msgid "Your %1$s (%2$s) is %3$s above the %4$s range, so it may feel snug there."
+msgstr ""
+
+#. translators: 1: measure, 2: value, 3: difference, 4: size.
+#: includes/Fit/Explainer.php:43
+#, php-format
+msgid "Your %1$s (%2$s) is %3$s below the %4$s range, so it may feel roomy there."
+msgstr ""
+
+#. translators: 1: list of measures, 2: size.
+#: includes/Fit/Explainer.php:48
+#, php-format
+msgid "Your %1$s falls within size %2$s."
+msgid_plural "Your %1$s fall within size %2$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Fit/Explainer.php:51
+msgid "It matches the size you usually wear."
+msgstr ""
+
+#: includes/Fit/Explainer.php:55
+msgid "Customers tell us this style runs small, so we suggest one size up."
+msgstr ""
+
+#: includes/Fit/Explainer.php:56
+msgid "Customers tell us this style runs large, so we suggest one size down."
+msgstr ""
+
+#. translators: 1: size, 2: alternative size.
+#: includes/Fit/Explainer.php:62
+#, php-format
+msgid "You are between %1$s and %2$s. You prefer a relaxed fit, so %2$s is also a good choice."
+msgstr ""
+
+#. translators: 1: size, 2: alternative size.
+#: includes/Fit/Explainer.php:65
+#, php-format
+msgid "You are between %1$s and %2$s: choose %2$s if you prefer more room."
+msgstr ""
+
+#. translators: 1: size, 2: alternative size.
+#: includes/Fit/Explainer.php:68
+#, php-format
+msgid "You are between %1$s and %2$s: choose %2$s if you prefer a closer fit."
+msgstr ""
+
+#: includes/Fit/Explainer.php:72
+msgid "Your measurements are above our largest size, so this item may not fit well."
+msgstr ""
+
+#: includes/Fit/Explainer.php:74
+msgid "Your measurements are below our smallest size, so this item may be loose."
+msgstr ""
+
+#: includes/Fit/Explainer.php:77
+msgid "Some measurements were estimated from your height and weight. Measuring yourself gives a more precise result."
+msgstr ""
+
+#. translators: 1: comma-separated list, 2: last item.
+#: includes/Fit/Explainer.php:97
+#, php-format
+msgid "%1$s and %2$s"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:186
+msgid "Not available"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:237
+#: build/admin.js:1
+msgid "How to measure"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:246
+#: includes/Frontend/Renderer.php:365
+msgid "Find my size"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:273
+msgid "Size guide sections"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:282
+#: build/admin.js:1
+msgid "Units"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:313
+msgid "Enter what you know. Measurements give the best result; height and weight give a quick estimate."
+msgstr ""
+
+#: includes/Frontend/Renderer.php:315
+msgid "Your measurements"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:316
+msgid "Height and weight"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:339
+msgid "Size you usually wear (optional)"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:339
+msgid "Not sure"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:350
+msgid "How do you like it to fit?"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:352
+#: build/admin.js:1
+msgid "Snug"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:353
+#: build/admin.js:1
+msgid "Regular"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:354
+#: build/admin.js:1
+msgid "Relaxed"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:362
+msgid "Remember my measurements on this device"
+msgstr ""
+
+#: includes/Frontend/Renderer.php:407
+msgid "Close size guide"
+msgstr ""
+
+#: includes/Frontend/Shortcodes.php:96
+msgid "Choose a size chart, or place the block on a product that has one."
+msgstr ""
+
+#: includes/Frontend/Storefront.php:304
+msgid "Your best size"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:305
+msgid "Also consider"
+msgstr ""
+
+#. translators: %s: size label.
+#: includes/Frontend/Storefront.php:307
+#, php-format
+msgid "Select size %s"
+msgstr ""
+
+#. translators: %s: size label.
+#: includes/Frontend/Storefront.php:309
+#, php-format
+msgid "Size %s selected"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:310
+msgid "Show in chart"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:311
+msgid "Start again"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:312
+msgid "Finding your size…"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:313
+msgid "Why this size"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:314
+msgid "Enter at least one measurement, or your height and weight."
+msgstr ""
+
+#: includes/Frontend/Storefront.php:315
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/Frontend/Storefront.php:317
+msgid "Great match"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:318
+msgid "Good match"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:319
+msgid "Rough estimate"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:322
+msgid "within range"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:323
+msgid "may be snug"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:324
+msgid "may be roomy"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:326
+msgid "estimated"
+msgstr ""
+
+#: includes/Frontend/Storefront.php:327
+#: build/admin.js:1
+msgid "Recommended"
+msgstr ""
+
+#: includes/Learning/Insights.php:137
+msgid "This style runs small. We recommend ordering one size up."
+msgstr ""
+
+#: includes/Learning/Insights.php:139
+msgid "This style runs large. We recommend ordering one size down."
+msgstr ""
+
+#. translators: 1: percent, 2: count.
+#: includes/Learning/Insights.php:150
+#, php-format
+msgid "%1$d%% of %2$d fit returns say \"too small\". Suggest one size up in the quiz."
+msgstr ""
+
+#. translators: 1: percent, 2: count.
+#: includes/Learning/Insights.php:152
+#, php-format
+msgid "%1$d%% of %2$d fit returns say \"too large\". Suggest one size down in the quiz."
+msgstr ""
+
+#: includes/Learning/Returns.php:37
+msgid "Choose a product."
+msgstr ""
+
+#: includes/Learning/Returns.php:79
+msgid "Could not save the return record."
+msgstr ""
+
+#: includes/Learning/Sources.php:165
+#: includes/Learning/Sources.php:203
+msgid "Fit feedback"
+msgstr ""
+
+#: includes/Learning/Sources.php:180
+msgid "No feedback"
+msgstr ""
+
+#: includes/Learning/Sources.php:181
+#: build/admin.js:1
+msgid "Too small"
+msgstr ""
+
+#: includes/Learning/Sources.php:182
+#: build/admin.js:1
+msgid "Too large"
+msgstr ""
+
+#: includes/Learning/Sources.php:183
+#: build/admin.js:1
+msgid "Fit OK"
+msgstr ""
+
+#: includes/Learning/Sources.php:184
+#: build/admin.js:1
+msgid "Other reason"
+msgstr ""
+
+#: includes/Learning/Sources.php:187
+msgid "Record why a sized item came back. DEV3 AI Size Guide learns \"runs small / large\" from it."
+msgstr ""
+
+#. translators: %s: size.
+#: includes/Learning/Sources.php:201
+#, php-format
+msgid "Size: %s"
+msgstr ""
+
+#: includes/Learning/Sources.php:209
+#: build/admin.js:1
+msgid "Note"
+msgstr ""
+
+#: includes/Learning/Sources.php:210
+msgid "Customer note (optional)"
+msgstr ""
+
+#: includes/Learning/Sources.php:214
+msgid "No products in this order."
+msgstr ""
+
+#: includes/Plugin.php:168
+msgid "DEV3 AI Size Guide & Fit Advisor needs WooCommerce to be active."
+msgstr ""
+
+#. translators: %d: number of tags.
+#: includes/Rest/Admin_Controller.php:129
+#, php-format
+msgid "%d tag"
+msgid_plural "%d tags"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of products.
+#: includes/Rest/Admin_Controller.php:133
+#, php-format
+msgid "%d product"
+msgid_plural "%d products"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Rest/Admin_Controller.php:135
+msgid "Not assigned"
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:160
+msgid "Template not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:513
+#: includes/Rest/Admin_Controller.php:529
+msgid "Record not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:516
+msgid "Choose a valid reason."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:542
+msgid "DEV3 AI is turned off or no API key is set."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:550
+msgid "Every return note is already classified."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:73
+msgid "This size guide is not available."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:156
+msgid "Unknown event."
+msgstr ""
+
+#: includes/Settings.php:31
+#: build/admin.js:1
+msgid "What size am I?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Background job"
+msgstr ""
+
+#. translators: 1: processed, 2: total, 3: percent
+#: build/admin.js:1
+#, js-format
+msgid "%1$s of %2$s processed (%3$s%%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Starting…"
+msgstr ""
+
+#. translators: %s: failed count
+#: build/admin.js:1
+#, js-format
+msgid "%s failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resume"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Retry failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show failed items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3SG_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3SG_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview width"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Desktop"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Phone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Preview sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add sizes to see the preview."
+msgstr ""
+
+#. translators: %s: item name.
+#: build/admin.js:1
+#, js-format
+msgid "Remove %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No matches"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Women"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Men"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unisex"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kids"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unclear"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Runs small"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Runs large"
+msgstr ""
+
+#: build/admin.js:1
+msgid "True to size"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Too few returns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No fit returns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refund"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Order screen"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Manual"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Integration"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz suggests 2 sizes up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz suggests 1 size up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz suggests 2 sizes down"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz suggests 1 size down"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Imported table"
+msgstr ""
+
+#. translators: %d: tokens.
+#: build/admin.js:1
+#, js-format
+msgid "%d tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check before accepting"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Table"
+msgstr ""
+
+#. translators: %d: rows.
+#: build/admin.js:1
+#, js-format
+msgid "%d sizes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use these tables"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add as extra tables"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build the chart with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft a complete chart from a product, a pasted supplier chart or a photo. You review it before anything is saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Source"
+msgstr ""
+
+#: build/admin.js:1
+msgid "From product data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Paste a chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Photo or screenshot"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Its title, categories, description and size options are sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Body profile"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Let DEV3 AI decide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Notes for DEV3 AI (optional)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. Italian brand, slim fit, sizes 44-56"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pasted size chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Copy a table from a supplier website, PDF or spreadsheet. Clean tables can be read without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Selected size chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose a JPG, PNG or WebP (max 4 MB)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unit used in the source"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Detect automatically"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Centimetres"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Inches"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add your API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Without a key you can still read clean pasted tables."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a Google Gemini API key to draft charts with AI. Templates and the editor work without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Read table (no AI)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Added to the editor. Save the chart to keep it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Test the “What size am I?” quiz"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Same maths shoppers get. No AI is used for the size itself."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add measurement columns with different values per size to enable the quiz."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit preference"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Find size"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Clear"
+msgstr ""
+
+#: build/admin.js:1
+msgid "High confidence"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Medium confidence"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low confidence"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Alt:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Return-learning applied"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size label"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Text / other size system"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Measurement"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Table title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Measurements are of"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The body (used by the quiz)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The garment (shown only)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size table editor"
+msgstr ""
+
+#. translators: %d: column number.
+#: build/admin.js:1
+#, js-format
+msgid "Column %d name"
+msgstr ""
+
+#. translators: %d: column number.
+#: build/admin.js:1
+#, js-format
+msgid "Column %d type"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move column left"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move column right"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete column"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Row actions"
+msgstr ""
+
+#. translators: 1: column name, 2: size.
+#: build/admin.js:1
+#, js-format
+msgid "%1$s for size %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move row up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Move row down"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete row"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add size"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add column"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All size charts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Untitled chart"
+msgstr ""
+
+#. translators: %d: number of products.
+#: build/admin.js:1
+#, js-format
+msgid "Shown on %d products. Values are stored in centimetres and kilograms; shoppers can switch to inches."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Unsaved changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size chart saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Details"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Chart name"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used to estimate measurements from height and weight."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live on the store"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Drafts are never shown to shoppers."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size tables"
+msgstr ""
+
+#: build/admin.js:1
+msgid "One row per size. Ranges like 86-91 are fine. Each table becomes a tab for shoppers."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Editing unit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tables"
+msgstr ""
+
+#. translators: %d: table number.
+#: build/admin.js:1
+#, js-format
+msgid "Table %d"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add table"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this table"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How to measure & fit note"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How-to-measure guide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "One step per line. \"Chest: measure around…\" shows the measure name in bold."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Write guide with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How-to-measure image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Change image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a measuring image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit note for shoppers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. This style runs small. We recommend one size up."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz adjustment (learned from returns)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Moves the quiz result up or down when a style runs small or large. Returns & learning suggests this for you."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where it shows"
+msgstr ""
+
+#: build/admin.js:1
+msgid "A product uses its own override first, then charts listing the product, then tags, then categories (sub-categories included). Higher priority wins ties."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Categories"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Tags"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Products"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Exclude products"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Priority"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Higher wins when two charts match at the same level."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Danger zone"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront preview"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Includes unsaved changes."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete this size chart?"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size chart deleted."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Products that use it will stop showing a size guide. It moves to the trash."
+msgstr ""
+
+#: build/admin.js:1
+msgid "From a product, a pasted supplier chart or a photo."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from a template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "12 ready-made charts: tops, dresses, jeans, shoes, kids, bras, rings, hats."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Blank chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Type or paste your own sizes."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Creating…"
+msgstr ""
+
+#: build/admin.js:1
+#: build/blocks.js:1
+msgid "Chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sizes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Assigned to"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Updated"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Build charts once and assign them to categories, tags or products."
+msgstr ""
+
+#: build/admin.js:1
+msgid "New chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search charts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search charts…"
+msgstr ""
+
+#. translators: %d: charts.
+#: build/admin.js:1
+#, js-format
+msgid "%d charts"
+msgstr ""
+
+#. translators: %s: chart.
+#: build/admin.js:1
+#, js-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: chart.
+#: build/admin.js:1
+#, js-format
+msgid "Duplicate %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Chart duplicated as a draft."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No size charts yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Start from a template or let DEV3 AI draft one from your product data."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Guide opens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quizzes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Daily guide opens and quizzes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No shopper activity yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Guide opens and quizzes appear here once shoppers use them."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Products without a size guide"
+msgstr ""
+
+#. translators: 1: covered, 2: total.
+#: build/admin.js:1
+#, js-format
+msgid "%1$d of %2$d products show a size guide."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggest assignments"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft: category → chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI found no category that clearly fits your charts."
+msgstr ""
+
+#. translators: %d: categories.
+#: build/admin.js:1
+#, js-format
+msgid "%d categories assigned."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Assign selected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Assign"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Every product has a size guide"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Or the products are set to \"No size guide\"."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Assign a size chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size chart assigned."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No size guide for this product"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sets the product override. To cover a whole category, add it in the chart’s “Where it shows”."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:1
+msgid "How shoppers use your size guides and what returns teach you."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Add a Google Gemini API key to draft charts from product data or photos and to explain quiz results. Charts, the quiz and return learning work without it."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create your first size chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pick a template, paste your supplier’s chart, or let DEV3 AI draft one from a product."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Browse templates"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Live size charts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product coverage"
+msgstr ""
+
+#. translators: 1: covered, 2: total.
+#: build/admin.js:1
+#, js-format
+msgid "%1$d of %2$d products"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quizzes completed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz → add to cart"
+msgstr ""
+
+#. translators: %d: add to carts.
+#: build/admin.js:1
+#, js-format
+msgid "%d add-to-carts after a recommendation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit returns"
+msgstr ""
+
+#. translators: %d: all returns.
+#: build/admin.js:1
+#, js-format
+msgid "of %d recorded returns"
+msgstr ""
+
+#. translators: %d: suggestions.
+#: build/admin.js:1
+#, js-format
+msgid "%d fit suggestion from returns"
+msgid_plural "%d fit suggestions from returns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin.js:1
+msgid "Review"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Some styles are returned as too small or too large more often than expected."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shopper activity"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Daily guide opens and completed quizzes."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Top products"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Opens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Carts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No data yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit quiz"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“What size am I?” matches the shopper’s measurements to your chart with plain maths. DEV3 AI only explains the result in friendly words."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Questions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show the “What size am I?” quiz"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Ask for fit preference (snug, regular, relaxed)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Ask for the size they usually wear (US, UK, EU…)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Uses the text columns of your chart, such as US or EU sizes."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimate chest, waist and hips from height and weight"
+msgstr ""
+
+#: build/admin.js:1
+msgid "For shoppers without a tape measure. Results are marked as estimated."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Offer to remember measurements on the shopper’s device"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Stored only in the browser (localStorage), never on your server."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Explain results with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sends only the size result (no names or emails). Cached, rate-limited and falls back to a written explanation."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try the quiz"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Chart to test"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit adjustment saved. The quiz uses it right away."
+msgstr ""
+
+#. translators: 1: fit returns, 2: bias text.
+#: build/admin.js:1
+#, js-format
+msgid "%1$d fit returns · %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Open chart"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Summarise with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggest one size up"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Suggest one size down"
+msgstr ""
+
+#. translators: %s: note.
+#: build/admin.js:1
+#, js-format
+msgid "Also show shoppers: “%s”"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI summary"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shopper note:"
+msgstr ""
+
+#. translators: %s: bias text.
+#: build/admin.js:1
+#, js-format
+msgid "Accept: %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sold"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fit-return rate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Signal"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Record a return"
+msgstr ""
+
+#: build/admin.js:1
+msgid "For returns handled outside WooCommerce refunds."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Return recorded."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reason"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Detect from the note"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Customer’s reason"
+msgstr ""
+
+#. translators: %d: records.
+#: build/admin.js:1
+#, js-format
+msgid "%d records updated."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Returns & learning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refund reasons and fit feedback are sorted into too small / too large. When a style keeps coming back one way, the quiz can adjust."
+msgstr ""
+
+#: build/admin.js:1
+msgid "No return data yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refunds with a reason, the “Fit feedback” box on orders and manual records appear here. Integrations can call do_action( ‘dev3sg_record_return’, … )."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Return records"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Classify unclear notes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI is reading return notes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "All reasons"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search notes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Search notes or sizes…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only DEV3 AI suggestions"
+msgstr ""
+
+#. translators: %d: suggestions.
+#: build/admin.js:1
+#, js-format
+msgid "%d DEV3 AI suggestions on this page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept all"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject all"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing changes until you accept."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI:"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept AI reason"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject AI reason"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete record"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No return records"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Learning settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Learning settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Look back (days)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Minimum fit returns"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Before a chart gets a suggestion."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Same-direction share (%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "e.g. 60 = at least 60% say “too small”."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Record WooCommerce refund reasons automatically"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where the size guide appears and how it looks. Shopper-facing text stays neutral."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Display"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show the size guide as"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Popup button and product tab"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Popup button only"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product tab only"
+msgstr ""
+
+#: build/admin.js:1
+msgid "On phones the popup opens as a bottom sheet."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Button position"
+msgstr ""
+
+#: build/admin.js:1
+msgid "After the add-to-cart button"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Before the add-to-cart form"
+msgstr ""
+
+#: build/admin.js:1
+msgid "After the price"
+msgstr ""
+
+#: build/admin.js:1
+msgid "After the product summary"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nowhere (use the shortcode or block)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size guide button text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Leave empty for the translated default."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Quiz button text"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Product tab title"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default unit for shoppers"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Automatic (inches in the US)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shoppers can always switch; their choice is remembered."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accent colour"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Buttons, the recommended size and highlights."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Products & data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Size attribute names"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Comma-separated, e.g. pa_size, size, pa_shoe-size. Used for “Select this size”, sales per size and return records."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Only show the guide on products that have a size attribute"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Count guide opens, quizzes and add-to-carts"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Anonymous counts only; no personal data or measurements are stored."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Delete all plugin data when the plugin is uninstalled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Shortcodes & block"
+msgstr ""
+
+#: build/admin.js:1
+msgid "buttons that open the popup (current product, or product_id=\"…\", or id=\"chart id\")."
+msgstr ""
+
+#: build/admin.js:1
+msgid "the chart inline, with the quiz tab (add quiz=\"no\" to hide it)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "only the “What size am I?” quiz."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Block editor: add the “Size Chart” block (WooCommerce category)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Templates"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Ready-made charts with standard measurements in cm. Use one, then adjust it to your brand."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Chart created from the template."
+msgstr ""
+
+#. translators: %s: template.
+#: build/admin.js:1
+#, js-format
+msgid "Use template %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use template"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Connect Google Gemini, pick models and set a monthly AI budget."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Size Chart"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "A size chart with a cm/in switch, how-to-measure guide and a \"What size am I?\" quiz."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Chart of the current product"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Show"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Size chart (inline)"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Buttons that open the popup"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "\"What size am I?\" quiz only"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Product ID (optional)"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Uses that product’s chart when no chart is chosen."
+msgstr ""

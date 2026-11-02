@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Size Guide &amp; Fit Advisor for WooCommerce – Documentation</title>
+<style>
+:root{--ink:#1f2328;--muted:#4b5563;--line:#e3e6eb;--brand:#4f46e5;--soft:#eef2ff}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff}
+header{background:linear-gradient(135deg,#4f46e5,#0ea5e9);color:#fff;padding:40px 16px}header div,main{max-width:960px;margin:0 auto}
+header h1{margin:0 0 6px;font-size:28px}header p{margin:0;opacity:.9}
+nav{background:#f8f9fb;border-bottom:1px solid var(--line);padding:10px 16px;position:sticky;top:0}nav div{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:6px 16px}
+nav a{color:var(--brand);text-decoration:none;font-weight:600;font-size:14px}
+main{padding:24px 16px 64px}h2{margin:40px 0 8px;font-size:22px;border-bottom:1px solid var(--line);padding-bottom:6px}h3{margin:24px 0 6px;font-size:17px}
+code{background:#f1f3f6;padding:1px 5px;border-radius:4px;font-size:14px}pre{background:#111827;color:#e5e7eb;padding:14px;border-radius:8px;overflow:auto;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:#f8f9fb}
+.note{background:var(--soft);border-left:4px solid var(--brand);padding:10px 14px;border-radius:0 8px 8px 0}
+img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+</style>
+</head>
+<body>
+<header><div><h1>DEV3 AI Size Guide &amp; Fit Advisor for WooCommerce</h1><p>Version 1.0.0 · by DEV3 Technologies · support: <a href="https://www.dev3.tech/support">https://www.dev3.tech/support</a></p></div></header>
+<nav><div><a href="#install">Install</a><a href="#key">Gemini key</a><a href="#charts">Size charts</a><a href="#display">Storefront</a><a href="#quiz">Fit quiz</a><a href="#returns">Returns &amp; learning</a><a href="#ai">DEV3 AI</a><a href="#dashboard">Dashboard</a><a href="#shortcodes">Shortcodes &amp; block</a><a href="#hooks">Hooks</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a></div></nav>
+<main>
+
+<div class="shots">
+<img src="screenshots/1-size-guide-popup.png" alt="Size guide popup on desktop">
+<img src="screenshots/2-phone-bottom-sheet-fit-quiz.png" alt="Fit quiz result in the phone bottom sheet">
+<img src="screenshots/3-chart-editor.png" alt="Chart editor with preview">
+</div>
+
+<h2 id="install">1. Installation</h2>
+<ol>
+<li>Requirements: WordPress 6.0+, PHP 7.4+ (tested on 8.3), WooCommerce 8.0+.</li>
+<li>Plugins → Add New → Upload Plugin → choose <code>dev3-ai-size-guide-for-woocommerce.zip</code> → Install → Activate.</li>
+<li>Open <strong>DEV3 AI Size Guide</strong> in the admin menu. No licence key or activation is needed.</li>
+<li>Go to <strong>Templates</strong>, pick a template (or <strong>Size charts → New chart</strong>), then set <em>Where it shows</em> and click <strong>Save chart</strong>.</li>
+</ol>
+<p>The plugin declares compatibility with WooCommerce High-Performance Order Storage (HPOS) and the Cart &amp; Checkout blocks.</p>
+
+<h2 id="key">2. Google Gemini API key (optional)</h2>
+<ol>
+<li>Create a key at <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a>.</li>
+<li>Paste it under <strong>API Config</strong> and click Save (it is stored encrypted). You can also define <code>DEV3SG_GEMINI_API_KEY</code> in <code>wp-config.php</code>.</li>
+<li>Pick models (default <code>gemini-2.5-flash</code>), set a monthly budget, and decide whether storefront AI (quiz explanations) is allowed.</li>
+</ol>
+<p class="note">Everything except the DEV3 AI buttons works without a key. Usage and estimated cost appear under <strong>Usage Logs</strong>.</p>
+
+<h2 id="charts">3. Size charts</h2>
+<h3>Editor</h3>
+<ul>
+<li><strong>Tables:</strong> a chart can have up to 6 tables (e.g. Body measurements, Garment measurements, International sizes). Each table becomes a tab for shoppers.</li>
+<li><strong>Columns:</strong> choose the type per column: <em>Size label</em>, <em>Text / other size system</em> (US, UK, EU…) or a <em>Measurement</em> (chest, bust, under-bust, waist, hips, inseam, height, weight, foot length/width, neck, sleeve, shoulder, thigh, head, hand, finger circumference, length, width, custom).</li>
+<li><strong>Values:</strong> one row per size; numbers or ranges (<code>86-91</code>). Switch the editor to <em>in / lb</em> to type imperial values; everything is stored in cm / kg.</li>
+<li><strong>Measurements are of the body</strong> (used by the quiz) or <strong>the garment</strong> (shown only).</li>
+<li><strong>How to measure:</strong> one step per line (<code>Chest: measure around…</code> shows "Chest" in bold) and an optional image from the media library.</li>
+<li><strong>Fit note</strong> shown to shoppers, and the <strong>quiz adjustment</strong> (±1 or ±2 sizes) learned from returns.</li>
+<li><strong>Live / Draft:</strong> drafts are never shown on the store.</li>
+<li>The right column shows a live <strong>storefront preview</strong> (desktop / phone) and a <strong>quiz simulator</strong> that runs on unsaved changes.</li>
+</ul>
+<h3>Templates</h3>
+<p>Women's tops, women's dresses, women's bottoms, men's tops &amp; shirts, men's bottoms &amp; jeans, unisex T-shirts (body + garment), women's shoes, men's shoes, kids' clothing, bras, rings and hats. Developers can add more with the <code>dev3sg_templates</code> filter.</p>
+<h3>Paste import (no AI)</h3>
+<p>In the editor's DEV3 AI card choose <em>Paste a chart</em> and click <strong>Read table (no AI)</strong>. Tab, semicolon, comma, pipe or two-space separated tables are read; column types are guessed from headers and inch values are detected and converted.</p>
+<h3>Assignment</h3>
+<p>Order of precedence for a product: the product's own override (Size guide box on the product edit screen: Automatic, No size guide, or a chart) → charts listing the product → charts matching a product tag → charts matching a category → charts matching a parent category. Within one level the higher <em>Priority</em> wins, then the newest chart. Excluded products are skipped. The Dashboard lists products without a size guide with a quick <strong>Assign</strong> button.</p>
+
+<h2 id="display">4. Storefront display</h2>
+<table>
+<tr><th>Setting</th><th>Options</th></tr>
+<tr><td>Show the size guide as</td><td>Popup button and product tab (default), popup only, tab only</td></tr>
+<tr><td>Button position</td><td>After the add-to-cart button, before the add-to-cart form, after the price, after the product summary, nowhere (use shortcode/block)</td></tr>
+<tr><td>Texts</td><td>Size guide button, quiz button and tab title (empty = translated default)</td></tr>
+<tr><td>Default unit</td><td>Automatic (inches in the US, Liberia and Myanmar), centimetres, inches. Shoppers can switch; the choice is remembered on their device.</td></tr>
+<tr><td>Accent colour</td><td>Buttons, highlights and the recommended size</td></tr>
+<tr><td>Size attribute names</td><td>Default <code>pa_size, size</code>. Used for "Select this size", units sold per size and return records.</td></tr>
+</table>
+<p>On phones the popup is a <strong>bottom sheet</strong> (drag the handle down, tap outside, press Escape or the close button). Tables scroll horizontally and vertically inside the sheet with a sticky header row and a sticky size column. Theme fonts are inherited; colours are CSS custom properties (<code>--dev3sg-accent-color</code>, <code>--dev3sg-paper</code>, <code>--dev3sg-ink</code>, <code>--dev3sg-line</code>, <code>--dev3sg-tint</code>).</p>
+
+<h2 id="quiz">5. "What size am I?" quiz</h2>
+<ul>
+<li>Asks for the body measurements your chart uses (only columns that differ between sizes), optional height and weight, the size usually worn in another system, and a fit preference (snug / regular / relaxed).</li>
+<li>The size is calculated with plain maths: distance of each measurement outside each size range, weighted by importance; relaxed adds ease, snug removes it; the chart's learned adjustment moves the result.</li>
+<li>Missing chest/waist/hips can be <strong>estimated</strong> from height and weight per body profile (marked "estimated").</li>
+<li>The result shows the size, an alternative when between sizes, a confidence meter, per-measure verdicts, the recommended row highlighted in the table and <strong>Select size</strong>, which picks the option in the variation dropdown.</li>
+<li>With DEV3 AI on, a friendly explanation replaces the written one (cached per identical result; falls back to the written text when AI is off, capped or failing).</li>
+<li>Settings: <strong>Fit quiz</strong> screen (show quiz, fit preference, usual size, estimates, remember measurements, AI explanation).</li>
+</ul>
+
+<h2 id="returns">6. Returns &amp; learning</h2>
+<ul>
+<li><strong>Sources:</strong> WooCommerce refund reasons (per refunded line, with its size), the <strong>Fit feedback</strong> box on the order screen (HPOS and legacy), manual records, and the <code>dev3sg_record_return</code> action for RMA plugins.</li>
+<li><strong>Classification:</strong> too small, too large, fit OK, other, unclear (keywords in English, German, French, Spanish and Dutch). <strong>Classify unclear notes</strong> runs a DEV3 AI background job; each suggestion waits for Accept / Reject.</li>
+<li><strong>Insights:</strong> per chart and size: units sold, fit returns, fit-return rate and signal. When at least the minimum number of fit returns (default 5) point the same way (default 60%), a "Runs small / large" suggestion appears. Accepting sets the quiz adjustment and optionally a shopper fit note; only returns after that change count towards the next suggestion. Dismissed suggestions return when more returns arrive.</li>
+<li><strong>Learning settings:</strong> look-back days, minimum sample, share and automatic refund capture.</li>
+</ul>
+
+<h2 id="ai">7. DEV3 AI features</h2>
+<table>
+<tr><th>Feature</th><th>Where</th><th>Sent to Gemini</th></tr>
+<tr><td>Draft a chart from product data</td><td>Chart editor → Build the chart with DEV3 AI</td><td>Title, categories, short description, description, attributes</td></tr>
+<tr><td>Read a pasted chart</td><td>Same card → Paste a chart</td><td>The pasted text</td></tr>
+<tr><td>Read a photo or screenshot</td><td>Same card → Photo or screenshot (JPG/PNG/WebP up to 4 MB)</td><td>The image</td></tr>
+<tr><td>Write the how-to-measure guide</td><td>Chart editor → How to measure</td><td>Chart name, profile, measure names</td></tr>
+<tr><td>Explain my size</td><td>Storefront quiz</td><td>The size result only (no personal data)</td></tr>
+<tr><td>Classify return notes</td><td>Returns &amp; learning</td><td>Return notes (PII masked)</td></tr>
+<tr><td>Summarise returns</td><td>Returns &amp; learning → Summarise with DEV3 AI</td><td>Counts per size and up to 40 masked notes</td></tr>
+<tr><td>Suggest assignments</td><td>Dashboard → Products without a size guide</td><td>Chart names and category names</td></tr>
+</table>
+<p class="note">Every AI result is a draft: <em>Use these tables</em>, <em>Add as extra tables</em>, <em>Accept</em>, <em>Regenerate</em> or <em>Reject</em>. Nothing is saved until you accept and then save the chart.</p>
+
+<h2 id="dashboard">8. Dashboard &amp; analytics</h2>
+<p>Live charts, product coverage, guide opens, completed quizzes, quiz → add-to-cart rate and fit returns for 7/30/90 days; daily activity; top products; open fit suggestions. Only anonymous counts are stored (no measurements, no personal data). Analytics can be turned off in Settings.</p>
+
+<h2 id="shortcodes">9. Shortcodes &amp; block</h2>
+<table>
+<tr><th>Shortcode</th><th>Output</th></tr>
+<tr><td><code>[dev3sg_size_guide]</code></td><td>Buttons that open the popup for the current product. <code>product_id="12"</code> or <code>id="chart id"</code>.</td></tr>
+<tr><td><code>[dev3sg_size_chart id="5"]</code></td><td>The chart inline with tabs and quiz. <code>quiz="no"</code> hides the quiz; <code>product_id</code> uses that product's chart.</td></tr>
+<tr><td><code>[dev3sg_fit_quiz product_id="12"]</code></td><td>Only the quiz.</td></tr>
+</table>
+<p>Block editor: <strong>Size Chart</strong> (WooCommerce category) with Chart, Show (inline / buttons / quiz) and Product ID options.</p>
+
+<h2 id="hooks">10. Hooks for developers</h2>
+<table>
+<tr><th>Hook</th><th>Type</th><th>Purpose</th></tr>
+<tr><td><code>dev3sg_record_return( $product_id, $size, $reason_text, $args )</code></td><td>action</td><td>Record a return from an RMA plugin. <code>$args</code>: order_id, item_id, reason.</td></tr>
+<tr><td><code>dev3sg_chart_saved( $id, $data )</code></td><td>action</td><td>After a chart is saved.</td></tr>
+<tr><td><code>dev3sg_chart_for_product( $chart_id, $product_id )</code></td><td>filter</td><td>Override the chart chosen for a product.</td></tr>
+<tr><td><code>dev3sg_templates( $templates )</code></td><td>filter</td><td>Add or change templates.</td></tr>
+<tr><td><code>dev3sg_measures( $measures )</code></td><td>filter</td><td>Measurement dictionary (labels, help, weights).</td></tr>
+<tr><td><code>dev3sg_estimates( $out, $height, $weight, $profile )</code></td><td>filter</td><td>Height/weight estimate formulas.</td></tr>
+<tr><td><code>dev3sg_fit_result( $result, $chart, $input )</code></td><td>filter</td><td>Change a quiz result.</td></tr>
+<tr><td><code>dev3sg_classifier_patterns( $patterns )</code></td><td>filter</td><td>Return-reason keywords.</td></tr>
+<tr><td><code>dev3sg_public_rate_limit( $limit, $bucket )</code></td><td>filter</td><td>Requests per minute per IP for fit / explain / track.</td></tr>
+<tr><td><code>dev3sg_prompt_{id}( $prompt )</code></td><td>filter</td><td>Customise AI prompts: chart_from_product, chart_from_text, chart_from_image, write_guide, explain_fit, classify_returns, return_insights, suggest_assign.</td></tr>
+<tr><td><code>dev3sg_ai_guard</code>, <code>dev3sg_capability</code>, <code>dev3sg_manage_capability</code></td><td>filter</td><td>Block AI calls, change capabilities.</td></tr>
+</table>
+<h3>REST API (<code>/wp-json/dev3sg/v1/</code>)</h3>
+<p>Admin (nonce + capability): <code>charts</code>, <code>charts/&lt;id&gt;</code>, <code>charts/&lt;id&gt;/duplicate</code>, <code>templates</code>, <code>measures</code>, <code>parse</code>, <code>lookup</code>, <code>coverage</code>, <code>assign</code>, <code>assign/categories</code>, <code>stats</code>, <code>fit/test</code>, <code>returns</code>, <code>returns/&lt;id&gt;</code>, <code>returns/classify</code>, <code>returns/accept</code>, <code>insights</code>, <code>insights/apply</code>, <code>insights/dismiss</code>, <code>ai/chart</code>, <code>ai/guide</code>, <code>ai/insights</code>, <code>ai/assign</code>. Public (same-origin, rate-limited, page-cache safe): <code>fit/recommend</code>, <code>fit/explain</code>, <code>track</code>.</p>
+
+<h2 id="faq">11. FAQ</h2>
+<h3>The buttons do not appear.</h3>
+<p>Check that the chart is <em>Live</em>, assigned to the product's category/tag/product, that the product override is not "No size guide", and (if enabled) that the product has a size attribute.</p>
+<h3>"Select size" does not pick the variation.</h3>
+<p>Add your attribute name (e.g. <code>pa_shoe-size</code>) under Settings → Size attribute names. Option names must match the chart's size labels.</p>
+<h3>Can I use it in a page builder?</h3>
+<p>Yes: use the shortcodes in any text or shortcode widget.</p>
+<h3>Does it slow down my store?</h3>
+<p>The storefront script is about 12 KB, loads only where a guide is shown and has no dependencies; the markup is rendered on the server.</p>
+<h3>Privacy</h3>
+<p>The plugin adds a privacy-policy snippet naming Google Gemini. Measurements are never stored on the server; quiz requests only send the numbers needed for the calculation.</p>
+
+<h2 id="changelog">12. Changelog</h2>
+<p><strong>1.0.0</strong> – Initial release.</p>
+<p>Google Gemini is a trademark of Google LLC. This plugin is not affiliated with Google.</p>
+</main>
+</body>
+</html>
